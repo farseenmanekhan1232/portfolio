@@ -6,17 +6,32 @@
     <title>mohammad farseen | portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for dark mode */
         body {
-            background-color: #1a202c;
-            color: #cbd5e0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Geist', sans-serif;
         }
         a {
             color: #63b3ed;
         }
         .icon {
-            fill: #cbd5e0;
+            fill: #fff;
+        }
+        .draggable {
+            cursor: move;
+            display: flex;
+            align-items: start;
+        }
+        .drag-handle {
+        padding-top:6px;
+            margin-right: 10px;
+            cursor: move;
+        }
+        .draggable:hover .drag-handle {
+            color: #63b3ed;
         }
     </style>
 </head>
@@ -45,84 +60,138 @@
             </div>
         </header>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">summary</h2>
-            <p>passionate full stack developer with a bachelor's degree in electronics and communication engineering, specializing in developing robust web applications and services. proficient in javascript, react, node.js, and various other technologies. seeking to leverage my expertise in a dynamic and innovative tech environment.</p>
-        </section>
+        <div id="content">
+            <section class="mb-12 draggable" draggable="true">
+                <div class="drag-handle"><i class="fas fa-ellipsis-v"></i></div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">summary</h2>
+                    <p>develop web apps. proficient in ts, next.js, react, node.js, and various other tech.</p>
+                </div>
+            </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">technical skills</h2>
-            <ul class="list-disc list-inside">
-                <li><strong>languages:</strong> javascript, typescript, python, dart, jsx, c++, c</li>
-                <li><strong>web development:</strong> react, redux, redux-toolkit, next.js, html/css, express.js, node.js, flask</li>
-                <li><strong>frameworks & libraries:</strong> web3.js, mediasoup, socket.io, langchain</li>
-                <li><strong>databases:</strong> mongodb, firebase, sql</li>
-                <li><strong>tools & technologies:</strong> git, aws, latex</li>
-            </ul>
-        </section>
+            <section class="mb-12 draggable" draggable="true">
+                <div class="drag-handle"><i class="fas fa-ellipsis-v"></i></div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">technical skills</h2>
+                    <ul class="list-disc list-inside">
+                        <li><strong>languages:</strong> typescript, javascript, python, dart, jsx, c++, c</li>
+                        <li><strong>web development:</strong>next.js, react, redux, redux-toolkit, html/css, express.js, node.js, flask</li>
+                        <li><strong>frameworks & libraries:</strong> web3.js, mediasoup, socket.io, langchain</li>
+                        <li><strong>databases:</strong> mongodb, firebase, sql</li>
+                        <li><strong>tools & technologies:</strong> git, aws, latex</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">experience</h2>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">full stack developer</h3>
-                <p class="italic">oct 2023 - present | metastart svy llp, remote</p>
-                <ul class="list-disc list-inside">
-                    <li>led the development of a survey monetization platform using reactjs, typescript, tailwind, express.js, mongodb, stripe, and socket.io, enhancing user engagement and data management.</li>
-                    <li>developed a gaming platform with integrated token economies, utilizing next.js, reactjs, typescript, mongodb, express.js, and web3.js to boost user engagement and transaction efficiency.</li>
-                    <li>built a volume bot for solana tokens using web3.js and transaction bundling, improving transaction efficiency by 40%.</li>
-                    <li>created an ecommerce platform with live streaming capabilities, increasing vendor sales by 25%, employing next.js, reactjs, stripe, mongodb, express.js, mediasoup, and socket.io.</li>
-                    <li>developed a chatbot using openai and langchain, reducing customer service response time by 50%, implemented with next.js, reactjs, typescript, mongodb, and express.js.</li>
-                </ul>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">flutter developer</h3>
-                <p class="italic">aug 2023 | pacewisdom solutions, mangalore, in</p>
-                <ul class="list-disc list-inside">
-                    <li>developed and maintained flutter-based applications, enhancing company project output by 20%.</li>
-                </ul>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">software development intern</h3>
-                <p class="italic">feb 2023 | pacewisdom solutions, mangalore, in</p>
-                <ul class="list-disc list-inside">
-                    <li>collaborated on multiple projects using react.js, node.js, mongodb, and mysql, increasing project delivery speed by 15%.</li>
-                </ul>
-            </div>
-        </section>
+            <section class="mb-12 draggable" draggable="true">
+                <div class="drag-handle"><i class="fas fa-ellipsis-v"></i></div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">experience</h2>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">sde1 | metastart (remote)</h3>
+                        <p class="italic text-xs mb-2">oct 2023 - present </p>
+                        <ul class="list-disc list-inside">
+                            <li>led the development of a survey monetization platform using reactjs, typescript, tailwind, express.js, mongodb, stripe, and socket.io, enhancing user engagement and data management.</li>
+                            <li>developed a gaming platform with integrated token economies, utilizing next.js, reactjs, typescript, mongodb, express.js, and web3.js to boost user engagement and transaction efficiency.</li>
+                            <li>built a volume bot for solana tokens using web3.js and transaction bundling, improving transaction efficiency by 40%.</li>
+                            <li>created an ecommerce platform with live streaming capabilities, increasing vendor sales by 25%, employing next.js, reactjs, stripe, mongodb, express.js, mediasoup, and socket.io.</li>
+                            <li>developed a chatbot using openai and langchain, reducing customer service response time by 50%, implemented with next.js, reactjs, typescript, mongodb, and express.js.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">sde intern | pacewisdom solutions (mangalore, in)</h3>
+                        <p class="italic text-xs mb-2">feb 2023 - jul 2023</p>
+                        <ul class="list-disc list-inside">
+                         <li>developed and maintained flutter-based applications, enhancing company project output by 20%.</li>
+                            <li>collaborated on multiple projects using react.js, node.js, mongodb, and mysql, increasing project delivery speed by 15%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">projects</h2>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">twitter clone</h3>
-                <p class="italic">react, redux-toolkit, express.js, mongodb | <a href="https://twitter-clone-9gvb.onrender.com/" target="_blank" class="underline">demo</a> | <a href="https://github.com/farseenmanekhan1232/twitter-clone-react" target="_blank" class="underline">source code</a></p>
-                <ul class="list-disc list-inside">
-                    <li>implemented a twitter clone using react, handling api calls with axios, and state management with redux-toolkit.</li>
-                    <li>developed backend server using express.js and managed database using mongodb atlas.</li>
-                </ul>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">ecommerce app</h3>
-                <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/appazon" target="_blank" class="underline">source code</a></p>
-                <ul class="list-disc list-inside">
-                    <li>developed an ecommerce app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
-                </ul>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">news app</h3>
-                <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/newsapp" target="_blank" class="underline">source code</a></p>
-                <ul class="list-disc list-inside">
-                    <li>created a news app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
-                </ul>
-            </div>
-        </section>
+            <section class="mb-12 draggable" draggable="true">
+                <div class="drag-handle"><i class="fas fa-ellipsis-v"></i></div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">projects</h2>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">twitter clone</h3>
+                        <p class="italic">react, redux-toolkit, express.js, mongodb | <a href="https://twitter-clone-9gvb.onrender.com/" target="_blank" class="underline">demo</a> | <a href="https://github.com/farseenmanekhan1232/twitter-clone-react" target="_blank" class="underline">source code</a></p>
+                        <ul class="list-disc list-inside">
+                            <li>implemented a twitter clone using react, handling api calls with axios, and state management with redux-toolkit.</li>
+                            <li>developed backend server using express.js and managed database using mongodb atlas.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">ecommerce app</h3>
+                        <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/appazon" target="_blank" class="underline">source code</a></p>
+                        <ul class="list-disc list-inside">
+                            <li>developed an ecommerce app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">news app</h3>
+                        <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/newsapp" target="_blank" class="underline">source code</a></p>
+                        <ul class="list-disc list-inside">
+                            <li>created a news app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <h2 class="text-2xl font-semibold mb-4">education</h2>
-            <div>
-                <h3 class="text-xl font-semibold">bachelor of engineering in electronics and communication engineering</h3>
-                <p class="italic">may 2023 | mangalore institute of technology and engineering, mangalore, in</p>
-            </div>
-        </section>
+            <section class="mb-12 draggable" draggable="true">
+                <div class="drag-handle"><i class="fas fa-ellipsis-v"></i></div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">education</h2>
+                    <div>
+                        <h3 class="text-xl font-semibold">bachelor of engineering in electronics and communication</h3>
+                        
+                        <p class='italic text-xs'>2019 - 2023</p>
+                        <p class="italic">mangalore institute of technology and engineering, mangalore, in</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+        const container = document.getElementById('content');
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', () => {
+                draggable.classList.add('dragging');
+            });
+
+            draggable.addEventListener('dragend', () => {
+                draggable.classList.remove('dragging');
+            });
+        });
+
+        container.addEventListener('dragover', e => {
+            e.preventDefault();
+            const afterElement = getDragAfterElement(container, e.clientY);
+            const dragging = document.querySelector('.dragging');
+            if (afterElement == null) {
+                container.appendChild(dragging);
+            } else {
+                container.insertBefore(dragging, afterElement);
+            }
+        });
+
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')];
+
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect();
+                const offset = y - box.top - box.height / 2;
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child };
+                } else {
+                    return closest;
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }
+    </script>
 </body>
 </html>
