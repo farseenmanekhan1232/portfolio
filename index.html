@@ -1,397 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1024" />
-    <title>Mohammad Farseen</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohammad farseen | portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-      .social-links {
-        width: 55%;
-        display: flex;
-        justify-content: space-between;
-      }
-      .social {
-        padding: 5px;
-        height: 50px;
-        width: 50px;
-      }
-      .tech-icon {
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-      }
-
-      .icon-box {
-        text-decoration: none;
-        color: black;
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: black;
-      }
-
-      i:hover {
-        text-decoration: none;
-        color: black;
-      }
+        /* Custom styles for dark mode */
+        body {
+            background-color: #1a202c;
+            color: #cbd5e0;
+        }
+        a {
+            color: #63b3ed;
+        }
+        .icon {
+            fill: #cbd5e0;
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <section class="landing">
-        <div class="row vertical-center">
-          <div class="col-lg-8 text-left pb-5">
-            <h1 class="display-4">Mohammad Farseen</h1>
-            <p class="lead pl-2">Developer</p>
-          </div>
-          <div class="col-lg-4 text-center my-auto pb-5 rounded-circle">
-            <img class="img-fluid rounded-circle" src="images/headshot.jpg" />
-          </div>
-        </div>
-      </section>
+</head>
+<body class="font-sans antialiased">
+    <div class="container mx-auto p-6">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold mb-2">mohammad farseen</h1>
+            <p class="text-lg mb-4">full stack developer</p>
+            <div class="flex space-x-4">
+                <a href="mailto:farseenmanekhan1232@gmail.com" class="flex items-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>email</span>
+                </a>
+                <a href="https://linkedin.com/in/mohammad-farseen-manekhan-2419531a7" target="_blank" class="flex items-center space-x-2">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin</span>
+                </a>
+                <a href="https://github.com/farseenmanekhan1232" target="_blank" class="flex items-center space-x-2">
+                    <i class="fab fa-github"></i>
+                    <span>github</span>
+                </a>
+                <a href="https://bit.ly/3qLDUDg" target="_blank" class="flex items-center space-x-2">
+                    <i class="fas fa-globe"></i>
+                    <span>portfolio</span>
+                </a>
+            </div>
+        </header>
 
-      <section class="mt-4 mb-4">
-        <h4 class="display-4">A little about me,</h4>
-        <div class="row">
-          <div class="col-lg-6 wrap text-left">
-            <div class="about-desc">
-              <h1 class="bold-text">About</h1>
-              <div class="pt-5">
-                <h2 class="mb-5">Hello!</h2>
-                <p>
-                  My name is Farseen. I’m a passionate developer recently
-                  graduated with a Bachelor’s Degree in Electronics and
-                  Communication Engineering. I believe in being curious rather
-                  than being passionate, and that's what drives me to learn new
-                  stuff.
-                </p>
-                <ul class="social-links list-unstyled mt-4">
-                  <li>
-                    <a
-                      href="mailto:farseenmanekhan1232@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img class="social" src="images/mail.png" alt="mail" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/farseenmanekhan1232"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        class="social"
-                        src="images/github.png"
-                        alt="github"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/mohammad-farseen-manekhan-2419531a7/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        class="social"
-                        src="images/linkedin.png"
-                        alt="linkedin"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/farseenmanekhan"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        class="social"
-                        src="images/twitter.png"
-                        alt="twitter"
-                      />
-                    </a>
-                  </li>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">summary</h2>
+            <p>passionate full stack developer with a bachelor's degree in electronics and communication engineering, specializing in developing robust web applications and services. proficient in javascript, react, node.js, and various other technologies. seeking to leverage my expertise in a dynamic and innovative tech environment.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">technical skills</h2>
+            <ul class="list-disc list-inside">
+                <li><strong>languages:</strong> javascript, typescript, python, dart, jsx, c++, c</li>
+                <li><strong>web development:</strong> react, redux, redux-toolkit, next.js, html/css, express.js, node.js, flask</li>
+                <li><strong>frameworks & libraries:</strong> web3.js, mediasoup, socket.io, langchain</li>
+                <li><strong>databases:</strong> mongodb, firebase, sql</li>
+                <li><strong>tools & technologies:</strong> git, aws, latex</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">experience</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">full stack developer</h3>
+                <p class="italic">oct 2023 - present | metastart svy llp, remote</p>
+                <ul class="list-disc list-inside">
+                    <li>led the development of a survey monetization platform using reactjs, typescript, tailwind, express.js, mongodb, stripe, and socket.io, enhancing user engagement and data management.</li>
+                    <li>developed a gaming platform with integrated token economies, utilizing next.js, reactjs, typescript, mongodb, express.js, and web3.js to boost user engagement and transaction efficiency.</li>
+                    <li>built a volume bot for solana tokens using web3.js and transaction bundling, improving transaction efficiency by 40%.</li>
+                    <li>created an ecommerce platform with live streaming capabilities, increasing vendor sales by 25%, employing next.js, reactjs, stripe, mongodb, express.js, mediasoup, and socket.io.</li>
+                    <li>developed a chatbot using openai and langchain, reducing customer service response time by 50%, implemented with next.js, reactjs, typescript, mongodb, and express.js.</li>
                 </ul>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-6 wrap align-content-center">
-            <div class="row mt-5 flex-column">
-              <div class="col-md-8">
-                <h2 class="mb-4">My Skills</h2>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="progress-wrap">
-                  <h4>Full Stack Web</h4>
-                  <div class="progress progress-style">
-                    <div
-                      class="progress-bar color-1"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 80%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="progress-wrap">
-                  <h4>DevOps</h4>
-                  <div class="progress progress-style">
-                    <div
-                      class="progress-bar color-1"
-                      role="progressbar"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 35%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">flutter developer</h3>
+                <p class="italic">aug 2023 | pacewisdom solutions, mangalore, in</p>
+                <ul class="list-disc list-inside">
+                    <li>developed and maintained flutter-based applications, enhancing company project output by 20%.</li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">software development intern</h3>
+                <p class="italic">feb 2023 | pacewisdom solutions, mangalore, in</p>
+                <ul class="list-disc list-inside">
+                    <li>collaborated on multiple projects using react.js, node.js, mongodb, and mysql, increasing project delivery speed by 15%.</li>
+                </ul>
+            </div>
+        </section>
 
-      <section class="interests pt-5 pb-5">
-        <h1 class="display-4">Tech I'm familiar with</h1>
-        <h1 class="bold-text bg-text">Tech Stack</h1>
-        <div class="row pt-5">
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://reactjs.org/">
-              <i class="devicon-react-original"></i>
-              <h3>React</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://nodejs.org/en/">
-              <i class="devicon-nodejs-plain"></i>
-              <h3>Node</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://expressjs.com/">
-              <i class="devicon-express-original"></i>
-              <h3>Express.js</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.python.org/">
-              <i class="devicon-python-plain"></i>
-              <h3>Python</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.cprogramming.com/">
-              <i class="devicon-cplusplus-plain"></i>
-              <h3>C++</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.cprogramming.com/">
-              <i class="devicon-c-plain"></i>
-              <h3>C</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.mysql.com/">
-              <i class="devicon-mysql-plain"></i>
-              <h3>SQL</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.mongodb.com/">
-              <i class="devicon-mongodb-plain"></i>
-              <h3>MongoDB</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://firebase.google.com/">
-              <i class="devicon-firebase-plain"></i>
-              <h3>Firebase</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://dart.dev">
-              <i class="devicon-flutter-plain"></i>
-              <h3>Flutter</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://dart.dev">
-              <i class="devicon-dart-plain"></i>
-              <h3>Dart</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://www.docker.com/">
-              <i class="devicon-docker-plain"></i>
-              <h3>Docker</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://kubernetes.io/">
-              <i class="devicon-kubernetes-plain"></i>
-              <h3>Kubernetes</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://git-scm.com/">
-              <i class="devicon-git-plain"></i>
-              <h3>Git</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a class="icon-box" href="https://aws.amazon.com/">
-              <i class="devicon-amazonwebservices-plain"></i>
-              <h3>AWS</h3>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h1 class="display-4 mt-5">Education</h1>
-        <h1 class="bold-text bg-text">Academics</h1>
-        <div class="py-4">
-          <div class="desc">
-            <h4>
-              Bachelor's Degree in Electronics &amp; Communication Engineering
-            </h4>
-            <p>Mangalore Institute of Technology &amp; Engineering</p>
-          </div>
-          <div>
-            <p>2019 - 2023</p>
-          </div>
-        </div>
-      </section>
-      -
-      <section>
-        <h1 class="display-4 mt-5">Experience</h1>
-        <h1 class="bold-text bg-text">Work</h1>
-        <div class="py-4">
-          <div class="desc">
-            <h4>Full Stack Developer | Metastart</h4>
-            <p>Remote | Oct 2023 - Present</p>
-            <ul>
-              <li>
-                Led the project team for both Frontend and Backend development
-                using ReactJS, NodeJS, MongoDB.
-              </li>
-              <li>
-                Successfully revamped the entire Frontend of the project,
-                enhancing user interface and experience.
-              </li>
-              <li>
-                Developed and implemented a majority of CRUD operations in the
-                Backend, streamlining data management.
-              </li>
-              <li>
-                Implemented a Secure Payment Gateway (using Stripe) for in-App
-                Purchases, ensuring safe and reliable transactions.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      -
-      <section>
-        <h1 class="display-4 mt-5">Projects</h1>
-        <h1 class="bold-text bg-text">Portfolio</h1>
-        <div class="py-4">
-          <div class="desc">
-            <h4>
-              <a
-                href="https://github.com/farseenmanekhan1232/twitter-clone"
-                target="_blank"
-                >Twitter Clone</a
-              >
-            </h4>
-            <p>React, Redux-toolkit, Express.js, MongoDB</p>
-            <ul>
-              <li>
-                Implemented Twitter Clone Using React, and Handled API Calls
-                Using Axios.
-              </li>
-              <li>Implemented State Management using Redux-toolkit.</li>
-              <li>Implemented Backend Server Using Express.js.</li>
-              <li>Implemented Database Using MongoDB Atlas.</li>
-            </ul>
-          </div>
-          <div class="desc mt-4">
-            <h4>
-              <a
-                href="https://github.com/farseenmanekhan1232/ecommerce-app"
-                target="_blank"
-                >Ecommerce App</a
-              >
-            </h4>
-            <p>Flutter, Providers, Firebase</p>
-            <ul>
-              <li>
-                Implemented Ecommerce App Using Flutter Framework and Dart
-                Language.
-              </li>
-              <li>Implemented State Management Using Providers.</li>
-              <li>Implemented Authentication Using Firebase.</li>
-            </ul>
-          </div>
-          <div class="desc mt-4">
-            <h4>
-              <a
-                href="https://github.com/farseenmanekhan1232/news-app"
-                target="_blank"
-                >News App</a
-              >
-            </h4>
-            <p>Flutter, Providers, Firebase</p>
-            <ul>
-              <li>
-                Implemented News App Using Flutter Framework and Dart Language.
-              </li>
-              <li>Implemented State Management Using Providers.</li>
-              <li>Implemented Authentication Using Firebase.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      -
-      <div class="mt-5 mb-5 text-center">
-        <h4>
-          If you like my work, you can
-          <a href="https://www.buymeacoffee.com/farseenmanekhan"
-            >buy me a book</a
-          >
-          and share your thoughts 🎉☕
-        </h4>
-      </div>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">projects</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">twitter clone</h3>
+                <p class="italic">react, redux-toolkit, express.js, mongodb | <a href="https://twitter-clone-9gvb.onrender.com/" target="_blank" class="underline">demo</a> | <a href="https://github.com/farseenmanekhan1232/twitter-clone-react" target="_blank" class="underline">source code</a></p>
+                <ul class="list-disc list-inside">
+                    <li>implemented a twitter clone using react, handling api calls with axios, and state management with redux-toolkit.</li>
+                    <li>developed backend server using express.js and managed database using mongodb atlas.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">ecommerce app</h3>
+                <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/appazon" target="_blank" class="underline">source code</a></p>
+                <ul class="list-disc list-inside">
+                    <li>developed an ecommerce app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold">news app</h3>
+                <p class="italic">flutter, providers, firebase | <a href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/newsapp" target="_blank" class="underline">source code</a></p>
+                <ul class="list-disc list-inside">
+                    <li>created a news app using flutter and dart, implementing state management with providers and authentication using firebase.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">education</h2>
+            <div>
+                <h3 class="text-xl font-semibold">bachelor of engineering in electronics and communication engineering</h3>
+                <p class="italic">may 2023 | mangalore institute of technology and engineering, mangalore, in</p>
+            </div>
+        </section>
     </div>
-  </body>
-  -
+</body>
 </html>
