@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Notebook } from "lucide-react";
 import Link from "next/link";
 
 export default function Portfolio() {
@@ -33,6 +33,12 @@ export default function Portfolio() {
               >
                 <Github className="mr-2 h-4 w-4" />
                 <span>GitHub</span>
+              </Link>
+            </Button>
+            <Button variant="outline" size="sm" asChild>
+              <Link href="https://blog.farseen.tech" target="_blank">
+                <Notebook className="mr-2 h-4 w-4" />
+                <span>blog</span>
               </Link>
             </Button>
           </div>
