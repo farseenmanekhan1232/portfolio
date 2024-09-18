@@ -79,7 +79,7 @@ export default function Portfolio() {
             <div>
               <h3 className="font-semibold">Full Stack Developer</h3>
               <p className="text-sm text-muted-foreground">
-                Oct 2023 - Present | MetaStart SVY LLP, Remote
+                Sept 2023 - Sept 2024 | MetaStart SVY LLP, Remote
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
