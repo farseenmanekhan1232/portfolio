@@ -50,11 +50,11 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent>
             <p>
-              I'm a full-stack developer with extensive experience in building
-              efficient, scalable web applications. I specialize in creating
-              dynamic user interfaces and robust backend systems using modern
-              technologies like React, Next.js, Node.js, and Express. From
-              concept to deployment, I ensure high-quality solutions that
+              I&apos;m a full-stack developer with extensive experience in
+              building efficient, scalable web applications. I specialize in
+              creating dynamic user interfaces and robust backend systems using
+              modern technologies like React, Next.js, Node.js, and Express.
+              From concept to deployment, I ensure high-quality solutions that
               enhance user engagement and streamline business operations.
             </p>
           </CardContent>
@@ -123,7 +123,10 @@ export default function Portfolio() {
                   Worked on Flutter-based applications and collaborated on
                   projects using React.js, Node.js, and MongoDB
                 </li>
-                <li>Integrated MySQL into web applications for better data management</li>
+                <li>
+                  Integrated MySQL into web applications for better data
+                  management
+                </li>
               </ul>
             </div>
           </CardContent>
