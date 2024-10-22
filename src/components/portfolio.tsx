@@ -13,8 +13,8 @@ export default function Portfolio() {
           <div className="flex gap-4">
             <Button variant="outline" size="sm" asChild>
               <Link href="mailto:farseenmanekhan1232@gmail.com">
-                <Mail className="mr-2 h-4 w-4" />
-                <span>Email</span>
+                <Mail className="lg:mr-2 h-4 w-4" />
+                <span className="max-lg:hidden flex">Email</span>
               </Link>
             </Button>
             <Button variant="outline" size="sm" asChild>
@@ -22,8 +22,8 @@ export default function Portfolio() {
                 href="https://linkedin.com/in/mohammad-farseen-manekhan-2419531a7"
                 target="_blank"
               >
-                <Linkedin className="mr-2 h-4 w-4" />
-                <span>LinkedIn</span>
+                <Linkedin className="lg:mr-2 h-4 w-4" />
+                <span className="max-lg:hidden flex">LinkedIn</span>
               </Link>
             </Button>
             <Button variant="outline" size="sm" asChild>
@@ -31,14 +31,14 @@ export default function Portfolio() {
                 href="https://github.com/farseenmanekhan1232"
                 target="_blank"
               >
-                <Github className="mr-2 h-4 w-4" />
-                <span>GitHub</span>
+                <Github className="lg:mr-2 h-4 w-4" />
+                <span className="max-lg:hidden flex">GitHub</span>
               </Link>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <Link href="https://blog.farseen.tech" target="_blank">
-                <Notebook className="mr-2 h-4 w-4" />
-                <span>Blog</span>
+                <Notebook className="lg:mr-2 h-4 w-4" />
+                <span className="max-lg:hidden flex">Blog</span>
               </Link>
             </Button>
           </div>
