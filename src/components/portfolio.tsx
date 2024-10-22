@@ -8,8 +8,8 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background text-foreground lowercase font-extralight">
       <div className="container mx-auto p-6 space-y-6">
         <header>
-          <h1 className="text-3xl font-bold mb-2">mohammad farseen</h1>
-          <p className="text-lg mb-4">full stack developer</p>
+          <h1 className="text-3xl font-bold mb-2">Mohammad Farseen</h1>
+          <p className="text-lg mb-4">Full Stack Developer</p>
           <div className="flex gap-4">
             <Button variant="outline" size="sm" asChild>
               <Link href="mailto:farseenmanekhan1232@gmail.com">
@@ -38,7 +38,7 @@ export default function Portfolio() {
             <Button variant="outline" size="sm" asChild>
               <Link href="https://blog.farseen.tech" target="_blank">
                 <Notebook className="mr-2 h-4 w-4" />
-                <span>blog</span>
+                <span>Blog</span>
               </Link>
             </Button>
           </div>
@@ -46,13 +46,16 @@ export default function Portfolio() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Summary</CardTitle>
+            <CardTitle>About Me</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
-              Full stack developer specializing in web applications and
-              services. Proficient in JavaScript, React, Node.js, and various
-              other technologies.
+              I'm a full-stack developer with extensive experience in building
+              efficient, scalable web applications. I specialize in creating
+              dynamic user interfaces and robust backend systems using modern
+              technologies like React, Next.js, Node.js, and Express. From
+              concept to deployment, I ensure high-quality solutions that
+              enhance user engagement and streamline business operations.
             </p>
           </CardContent>
         </Card>
@@ -63,10 +66,26 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent>
             <ul className="list-disc list-inside">
-              <li>Languages: JavaScript, TypeScript, Python, Dart</li>
-              <li>Web: React, Redux, Next.js, Express.js, Node.js</li>
-              <li>Databases: MongoDB, Firebase, SQL</li>
-              <li>Tools: Git, AWS</li>
+              <li>
+                <strong>Frontend:</strong> React.js, Next.js, TypeScript,
+                JavaScript (ES6+), Redux, Context API, Tailwind CSS, Material-UI
+              </li>
+              <li>
+                <strong>Backend:</strong> Node.js, Express.js, WebSockets
+                (Socket.io), RESTful APIs, Web3.js, Langchain (AI Integration)
+              </li>
+              <li>
+                <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, Firebase
+              </li>
+              <li>
+                <strong>Deployment:</strong> AWS, Vercel, Netlify, Heroku
+              </li>
+              <li>
+                <strong>Version Control:</strong> Git, GitHub, GitLab
+              </li>
+              <li>
+                <strong>Collaborative Tools:</strong> Jira, Trello, Slack
+              </li>
             </ul>
           </CardContent>
         </Card>
@@ -83,12 +102,15 @@ export default function Portfolio() {
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Developed survey monetization platform and gaming platform
+                  Built a survey monetization platform and a gaming platform
                 </li>
                 <li>
-                  Created ecommerce platform with live streaming capabilities
+                  Created an e-commerce platform with live streaming
+                  capabilities
                 </li>
-                <li>Developed chatbot using OpenAI and LangChain</li>
+                <li>
+                  Developed an AI-powered chatbot using OpenAI and LangChain
+                </li>
               </ul>
             </div>
             <div>
@@ -97,11 +119,11 @@ export default function Portfolio() {
                 Feb 2023 | Pacewisdom Solutions, Mangalore, IN
               </p>
               <ul className="list-disc list-inside mt-2">
-                <li>Developed Flutter-based applications</li>
                 <li>
-                  Collaborated on projects using React.js, Node.js, MongoDB, and
-                  MySQL
+                  Worked on Flutter-based applications and collaborated on
+                  projects using React.js, Node.js, and MongoDB
                 </li>
+                <li>Integrated MySQL into web applications for better data management</li>
               </ul>
             </div>
           </CardContent>
