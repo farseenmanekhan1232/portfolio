@@ -10,42 +10,64 @@ export default function Portfolio() {
         <header>
           <h1 className="text-3xl font-bold mb-2">Mohammad Farseen</h1>
           <p className="text-lg mb-4">Full Stack Developer</p>
-          <div className="flex gap-4">
-            <Button variant="outline" size="sm" asChild>
-              <Link href="mailto:farseenmanekhan1232@gmail.com">
-                <Mail className="lg:mr-2 h-4 w-4" />
-                <span className="max-lg:hidden flex">Email</span>
-              </Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link
-                href="https://linkedin.com/in/mohammad-farseen-manekhan-2419531a7"
-                target="_blank"
+          <div className="flex flex-wrap gap-4 w-full">
+            <div className="grid grid-cols-4 lg:flex gap-4 w-full">
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="max-lg:w-full"
               >
-                <Linkedin className="lg:mr-2 h-4 w-4" />
-                <span className="max-lg:hidden flex">LinkedIn</span>
-              </Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link
-                href="https://github.com/farseenmanekhan1232"
-                target="_blank"
+                <Link href="mailto:farseenmanekhan1232@gmail.com">
+                  <Mail className="lg:mr-2 h-4 w-4" />
+                  <span className="max-lg:hidden flex">Email</span>
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="max-lg:w-full"
               >
-                <Github className="lg:mr-2 h-4 w-4" />
-                <span className="max-lg:hidden flex">GitHub</span>
-              </Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link href="https://blog.farseen.tech" target="_blank">
-                <Notebook className="lg:mr-2 h-4 w-4" />
-                <span className="max-lg:hidden flex">Blog</span>
-              </Link>
-            </Button>
+                <Link
+                  href="https://linkedin.com/in/mohammad-farseen-manekhan-2419531a7"
+                  target="_blank"
+                >
+                  <Linkedin className="lg:mr-2 h-4 w-4" />
+                  <span className="max-lg:hidden flex">LinkedIn</span>
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="max-lg:w-full"
+              >
+                <Link
+                  href="https://github.com/farseenmanekhan1232"
+                  target="_blank"
+                >
+                  <Github className="lg:mr-2 h-4 w-4" />
+                  <span className="max-lg:hidden flex">GitHub</span>
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="max-lg:w-full"
+              >
+                <Link href="https://blog.farseen.tech" target="_blank">
+                  <Notebook className="lg:mr-2 h-4 w-4" />
+                  <span className="max-lg:hidden flex">Blog</span>
+                </Link>
+              </Button>
+            </div>
             <Button
               asChild
               variant={"outline"}
-              size="sm"
-              className="text-black bg-white hover:bg-white/80 hover:text-black"
+              size="lg"
+              className="max-lg:w-full text-black bg-white hover:bg-white/80 hover:text-black"
             >
               <Link
                 href="https://calendar.app.google/hfhtrX2W6oZoApDj7"
