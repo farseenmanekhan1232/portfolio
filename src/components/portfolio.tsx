@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-background text-foreground lowercase font-extralight">
+    <div className="min-h-screen lowercase font-extralight">
       <div className="container mx-auto p-6 space-y-6">
         <header>
           <h1 className="text-3xl font-bold mb-2">Mohammad Farseen</h1>
-          <p className="text-lg mb-4">Full Stack Developer</p>
+          <p className="text-lg mb-4">Solopreneur & Full Stack Developer</p>
           <div className="flex flex-wrap gap-4 w-full">
             <div className="grid grid-cols-4 lg:flex gap-4 w-full">
               <Button
@@ -86,12 +86,14 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent>
             <p>
-              I&apos;m a full-stack developer with extensive experience in
-              building efficient, scalable web applications. I specialize in
-              creating dynamic user interfaces and robust backend systems using
-              modern technologies like React, Next.js, Node.js, and Express.
-              From concept to deployment, I ensure high-quality solutions that
-              enhance user engagement and streamline business operations.
+              I’m Mohammad Farseen, a solopreneur and seasoned Full Stack
+              Developer. I specialize in building intelligent digital solutions
+              using AI, Web3, and mobile technologies, helping businesses
+              optimize their operations and scale effectively. With experience
+              in custom tool development and software engineering across
+              multiple industries, I bring a strong problem-solving mindset to
+              every project. Let’s bring your vision to life with innovative,
+              tailored solutions.
             </p>
           </CardContent>
         </Card>
@@ -104,23 +106,27 @@ export default function Portfolio() {
             <ul className="list-disc list-inside">
               <li>
                 <strong>Frontend:</strong> React.js, Next.js, TypeScript,
-                JavaScript (ES6+), Redux, Context API, Tailwind CSS, Material-UI
+                JavaScript (ES6+), Tailwind CSS, Material-UI
               </li>
               <li>
-                <strong>Backend:</strong> Node.js, Express.js, WebSockets
-                (Socket.io), RESTful APIs, Web3.js, Langchain (AI Integration)
+                <strong>Backend:</strong> Node.js, Express.js, GraphQL (Apollo),
+                WebSockets, REST APIs, Web3.js, Langchain (AI Integration)
               </li>
               <li>
-                <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, Firebase
+                <strong>Blockchain:</strong> Solidity, Smart Contracts,
+                Ethereum, NestJS
               </li>
               <li>
-                <strong>Deployment:</strong> AWS, Vercel, Netlify, Heroku
+                <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, Redis,
+                Firebase
               </li>
               <li>
-                <strong>Version Control:</strong> Git, GitHub, GitLab
+                <strong>Deployment & Cloud:</strong> AWS, Vercel, Netlify,
+                Heroku
               </li>
               <li>
-                <strong>Collaborative Tools:</strong> Jira, Trello, Slack
+                <strong>Tools & Version Control:</strong> Git, GitHub, GitLab,
+                Jira, Trello, Slack
               </li>
             </ul>
           </CardContent>
@@ -132,80 +138,100 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
-              <h3 className="font-semibold">Full Stack Developer</h3>
+              <h3 className="font-semibold">Founding Member</h3>
               <p className="text-sm text-muted-foreground">
-                Sept 2023 - Sept 2024 | MetaStart SVY LLP, Remote
+                Aug 2023 - Present | Techmorph, India
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Built a survey monetization platform and a gaming platform
+                  Helped establish Techmorph, focusing on scalable Web3 and AI
+                  solutions
                 </li>
                 <li>
-                  Created an e-commerce platform with live streaming
-                  capabilities
-                </li>
-                <li>
-                  Developed an AI-powered chatbot using OpenAI and LangChain
+                  Led the development of tools to automate business processes
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold">Software Development Intern</h3>
+              <h3 className="font-semibold">Contract Software Engineer</h3>
               <p className="text-sm text-muted-foreground">
-                Feb 2023 | Pacewisdom Solutions, Mangalore, IN
+                March 2024 - Present | Breaking The Lines, United Kingdom
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Worked on Flutter-based applications and collaborated on
-                  projects using React.js, Node.js, and MongoDB
+                  Developed custom tools for optimizing backend processes and
+                  data workflows
                 </li>
                 <li>
-                  Integrated MySQL into web applications for better data
-                  management
+                  Worked on scaling applications to improve performance and user
+                  experience
                 </li>
               </ul>
             </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Projects</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
             <div>
-              <h3 className="font-semibold">Twitter Clone</h3>
+              <h3 className="font-semibold">Contract Developer</h3>
               <p className="text-sm text-muted-foreground">
-                React, Redux-Toolkit, Express.js, MongoDB |
-                <Link
-                  href="https://twitter-clone-9gvb.onrender.com/"
-                  target="_blank"
-                  className="underline ml-1 text-primary"
-                >
-                  Demo
-                </Link>{" "}
-                |
-                <Link
-                  href="https://github.com/farseenmanekhan1232/twitter-clone-react"
-                  target="_blank"
-                  className="underline ml-1 text-primary"
-                >
-                  Code
-                </Link>
+                Oct 2024 - Present | BIKEFIXUP, India
               </p>
+              <ul className="list-disc list-inside mt-2">
+                <li>
+                  Engineered backend solutions to support logistics processes
+                </li>
+                <li>
+                  Integrated custom APIs to enhance operational efficiency
+                </li>
+              </ul>
             </div>
             <div>
-              <h3 className="font-semibold">Ecommerce App</h3>
+              <h3 className="font-semibold">Contract Developer</h3>
               <p className="text-sm text-muted-foreground">
-                Flutter, Providers, Firebase |
-                <Link
-                  href="https://github.com/farseenmanekhan1232/flutter_projects/tree/master/appazon"
-                  target="_blank"
-                  className="underline ml-1 text-primary"
-                >
-                  Code
-                </Link>
+                Oct 2024 - Present | VIRALWAVE, Morocco
               </p>
+              <ul className="list-disc list-inside mt-2">
+                <li>
+                  Built tailored backend tools for optimizing content workflows
+                </li>
+                <li>
+                  Enhanced app scalability to support dynamic content demands
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold">Contract Developer</h3>
+              <p className="text-sm text-muted-foreground">
+                Nov 2024 - Present | ThemeNcode LLC, Pakistan
+              </p>
+              <ul className="list-disc list-inside mt-2">
+                <li>
+                  Developed custom WordPress plugins for optimized performance
+                </li>
+                <li>
+                  Enhanced client website functionality through tailored
+                  solutions
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold">SDE 1</h3>
+              <p className="text-sm text-muted-foreground">
+                Sept 2023 - Sept 2024 | MetaStart, India
+              </p>
+              <ul className="list-disc list-inside mt-2">
+                <li>Developed a survey monetization and gaming platform</li>
+                <li>Built an AI-powered chatbot using OpenAI and LangChain</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold">Full Stack Engineer</h3>
+              <p className="text-sm text-muted-foreground">
+                Feb 2024 - June 2024 | Metridash, India
+              </p>
+              <ul className="list-disc list-inside mt-2">
+                <li>
+                  Built scalable web applications for data-driven insights
+                </li>
+                <li>Collaborated on front-end optimization for enhanced UX</li>
+              </ul>
             </div>
           </CardContent>
         </Card>
