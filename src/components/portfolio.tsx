@@ -7,6 +7,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen lowercase font-extralight">
       <div className="container mx-auto p-6 space-y-6">
+        {/* Header Section */}
         <header>
           <h1 className="text-3xl font-bold mb-2">Mohammad Farseen</h1>
           <p className="text-lg mb-4">Solopreneur & Full Stack Developer</p>
@@ -80,24 +81,25 @@ export default function Portfolio() {
           </div>
         </header>
 
+        {/* About Me Section */}
         <Card>
           <CardHeader>
             <CardTitle>About Me</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
-              I’m Mohammad Farseen, a solopreneur and seasoned Full Stack
-              Developer. I specialize in building intelligent digital solutions
-              using AI, Web3, and mobile technologies, helping businesses
-              optimize their operations and scale effectively. With experience
-              in custom tool development and software engineering across
-              multiple industries, I bring a strong problem-solving mindset to
-              every project. Let’s bring your vision to life with innovative,
-              tailored solutions.
+              I&apos;m Mohammad Farseen, a seasoned Full Stack Developer and
+              Solopreneur specializing in crafting scalable, intelligent digital
+              solutions using AI, Web3, and mobile technologies. My expertise
+              lies in enhancing business operations and user engagement through
+              innovative software systems. With experience spanning industries
+              and clients worldwide, I bring a strong problem-solving mindset
+              and a results-driven approach to every project.
             </p>
           </CardContent>
         </Card>
 
+        {/* Skills Section */}
         <Card>
           <CardHeader>
             <CardTitle>Technical Skills</CardTitle>
@@ -105,24 +107,31 @@ export default function Portfolio() {
           <CardContent>
             <ul className="list-disc list-inside">
               <li>
-                <strong>Frontend:</strong> React.js, Next.js, TypeScript,
-                JavaScript (ES6+), Tailwind CSS, Material-UI
+                <strong>AI/ML & Blockchain:</strong> Langchain, OpenAI,
+                Generative AI, Solidity, Smart Contracts, Ethereum, Web3.js
               </li>
               <li>
-                <strong>Backend:</strong> Node.js, Express.js, GraphQL (Apollo),
-                WebSockets, REST APIs, Web3.js, Langchain (AI Integration)
+                <strong>Frontend:</strong> React.js, Next.js, Astro, TypeScript,
+                JavaScript (ES6+), Tailwind CSS, Material-UI, WebRTC, Three.js
               </li>
               <li>
-                <strong>Blockchain:</strong> Solidity, Smart Contracts,
-                Ethereum, NestJS
+                <strong>Backend:</strong> Node.js, Express.js, NestJS, REST
+                APIs, WebSockets, GraphQL (Apollo)
               </li>
               <li>
-                <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, Redis,
-                Firebase
+                <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL,
+                Firebase, Redis
               </li>
               <li>
-                <strong>Deployment & Cloud:</strong> AWS, Vercel, Netlify,
-                Heroku
+                <strong>Mobile Development:</strong> Flutter (Cross-Platform
+                Development)
+              </li>
+              <li>
+                <strong>Deployment & Cloud:</strong> AWS, Docker, Vercel,
+                Netlify, Heroku, CI/CD Pipelines
+              </li>
+              <li>
+                <strong>No-Code Tools:</strong> Webflow, Airtable, Zapier
               </li>
               <li>
                 <strong>Tools & Version Control:</strong> Git, GitHub, GitLab,
@@ -132,6 +141,7 @@ export default function Portfolio() {
           </CardContent>
         </Card>
 
+        {/* Experience Section */}
         <Card>
           <CardHeader>
             <CardTitle>Experience</CardTitle>
@@ -140,114 +150,116 @@ export default function Portfolio() {
             <div>
               <h3 className="font-semibold">Founding Member</h3>
               <p className="text-sm text-muted-foreground">
-                Aug 2023 - Present | Techmorph, India
+                Aug 2023 - Present | Techmorph
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Helped establish Techmorph, focusing on scalable Web3 and AI
-                  solutions
+                  Built AI/ML tools, blockchain platforms, and scalable software
+                  systems for diverse industries.
                 </li>
                 <li>
-                  Led the development of tools to automate business processes
+                  Developed solutions to automate workflows and optimize client
+                  operations.
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold">Contract Software Engineer</h3>
+              <h3 className="font-semibold">Software Development Engineer 1</h3>
               <p className="text-sm text-muted-foreground">
-                March 2024 - Present | Breaking The Lines, United Kingdom
+                Sept 2023 - Sept 2024 | MetaStart
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Developed custom tools for optimizing backend processes and
-                  data workflows
+                  Created a blockchain-based gaming platform with token
+                  economies, increasing transaction efficiency by 30%.
                 </li>
                 <li>
-                  Worked on scaling applications to improve performance and user
-                  experience
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold">Contract Developer</h3>
-              <p className="text-sm text-muted-foreground">
-                Oct 2024 - Present | BIKEFIXUP, India
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                <li>
-                  Engineered backend solutions to support logistics processes
-                </li>
-                <li>
-                  Integrated custom APIs to enhance operational efficiency
+                  Developed AI-powered chatbots using OpenAI, reducing customer
+                  service response time by 50%.
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold">Contract Developer</h3>
               <p className="text-sm text-muted-foreground">
-                Oct 2024 - Present | VIRALWAVE, Morocco
+                2024 - Present | Multiple Clients
               </p>
               <ul className="list-disc list-inside mt-2">
                 <li>
-                  Built tailored backend tools for optimizing content workflows
+                  Built a Telegram Bot using Python for automated workflows.
                 </li>
                 <li>
-                  Enhanced app scalability to support dynamic content demands
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold">Contract Developer</h3>
-              <p className="text-sm text-muted-foreground">
-                Nov 2024 - Present | ThemeNcode LLC, Pakistan
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                <li>
-                  Developed custom WordPress plugins for optimized performance
+                  Developed a Solana token volume bot, improving transaction
+                  bundling efficiency by 40%.
                 </li>
                 <li>
-                  Enhanced client website functionality through tailored
-                  solutions
+                  Enhanced backend systems for logistics and dynamic content
+                  platforms.
                 </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold">SDE 1</h3>
-              <p className="text-sm text-muted-foreground">
-                Sept 2023 - Sept 2024 | MetaStart, India
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                <li>Developed a survey monetization and gaming platform</li>
-                <li>Built an AI-powered chatbot using OpenAI and LangChain</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold">Full Stack Engineer</h3>
-              <p className="text-sm text-muted-foreground">
-                Feb 2024 - June 2024 | Metridash, India
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                <li>
-                  Built scalable web applications for data-driven insights
-                </li>
-                <li>Collaborated on front-end optimization for enhanced UX</li>
               </ul>
             </div>
           </CardContent>
         </Card>
 
+        {/* Portfolio Highlights */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Portfolio Highlights</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside">
+              <li>
+                <strong>AI Playground:</strong> Compared multiple AI models
+                (ChatGPT, Claude, Gemini, etc.) simultaneously for real-time
+                insights.
+              </li>
+              <li>
+                <strong>E-commerce App:</strong> Developed a Flutter-based app
+                with real-time updates, secure authentication, and seamless
+                performance.
+              </li>
+              <li>
+                <strong>Bike Spares Marketplace:</strong> Built Xtraspare,
+                featuring 10,000+ products, global logistics integration, and
+                mobile app support.
+              </li>
+              <li>
+                <strong>Traffic Cloaking Platform:</strong> Designed WeCloakit
+                to protect campaigns from malicious traffic.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Testimonials Section */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Testimonials</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>
+              <strong>Hassan Ahouiek:</strong> "Mohammed has proven to be easy
+              to work with, attentive, and responsive. Highly recommended."
+            </p>
+            <p>
+              <strong>Maclean M.:</strong> "The e-commerce app exceeded our
+              expectations in both design and functionality. Fantastic
+              experience!"
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Education Section */}
         <Card>
           <CardHeader>
             <CardTitle>Education</CardTitle>
           </CardHeader>
           <CardContent>
             <h3 className="font-semibold">
-              Bachelor of Engineering in Electronics and Communication
-              Engineering
+              Bachelor of Engineering, Electronics and Communication
             </h3>
             <p className="text-sm text-muted-foreground">
-              May 2023 | Mangalore Institute of Technology and Engineering,
-              Mangalore, IN
+              May 2023 | Mangalore Institute of Technology and Engineering
             </p>
           </CardContent>
         </Card>
