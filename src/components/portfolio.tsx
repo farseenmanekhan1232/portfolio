@@ -238,13 +238,14 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent>
             <p>
-              <strong>Hassan Ahouiek:</strong> "Mohammed has proven to be easy
-              to work with, attentive, and responsive. Highly recommended."
+              <strong>Hassan Ahouiek:</strong> &quot;Mohammed has proven to be
+              easy to work with, attentive, and responsive. Highly
+              recommended.&quot;
             </p>
             <p>
-              <strong>Maclean M.:</strong> "The e-commerce app exceeded our
+              <strong>Mikhael K.:</strong> &quot;The e-commerce app exceeded our
               expectations in both design and functionality. Fantastic
-              experience!"
+              experience!&quot;
             </p>
           </CardContent>
         </Card>
